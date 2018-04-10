@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:minHeight="50dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/rounded_edittext"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_device_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_weight="3.5"
+        android:ellipsize="marquee"
+        android:text="设备名称"
+        android:textColor="#000000"
+        android:textSize="18dp"/>
+
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_button"
+        android:focusable="false"
+        android:text="搭讪"
+        android:textColor="#ffffff"
+        android:textSize="15dp"/>
+
+</LinearLayout>
+

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_demo1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.neu.yoyo.namecarddesign.Demo">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="206dp"
+            android:id="@+id/demo1"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/demo1">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginBottom="19dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="200dp"
+                        android:layout_height="20dp">
+
+                        <TextView
+                            android:text="Company:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:id="@+id/textView3"
+                            android:textAppearance="@android:style/TextAppearance.Material.Small"
+                            tools:ignore="NewApi" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/show_company"
+                            android:textAppearance="@android:style/TextAppearance.Material.Small"
+                            tools:ignore="NewApi" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="200dp"
+                        android:layout_height="20dp">
+
+                        <TextView
+                            android:text="Position  :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:id="@+id/textView6"
+                            android:textAppearance="@android:style/TextAppearance.Material.Small"
+                            tools:targetApi="lollipop" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/show_position"
+                            android:layout_weight="1"
+                            android:textAppearance="@android:style/TextAppearance.Material.Small"
+                            tools:targetApi="lollipop" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="200dp"
+                        android:layout_height="20dp">
+
+                        <TextView
+                            android:text="mailcode:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView8" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/show_mailcode"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:layout_marginLeft="-50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="55dp">
+
+                    <TextView
+                        android:text="__________________________"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="200dp"
+                        android:layout_height="20dp">
+
+                        <TextView
+                            android:text="phone:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:id="@+id/textView2" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:id="@+id/show_phone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="200dp"
+                        android:layout_height="20dp">
+
+                        <TextView
+                            android:text="email:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:id="@+id/textView4" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:id="@+id/show_email"
+                            android:layout_weight="3.34" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:text="name"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/show_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+            </GridLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

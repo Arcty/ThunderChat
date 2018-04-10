@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <ListView
+        android:id="@+id/lv_chatRecord"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/below"
+        android:layout_below="@+id/relativeLayout"
+        android:background="#eeeff3"
+        android:divider="@null"
+        android:transcriptMode="alwaysScroll"/>
+
+
+    <LinearLayout
+        android:id="@+id/below"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/tv_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+            android:background="@drawable/rounded_edittext"
+            android:hint="请输入要发送的文字"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:id="@+id/btn_sendMessage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="发送"
+
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:padding="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_white"/>
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="user"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

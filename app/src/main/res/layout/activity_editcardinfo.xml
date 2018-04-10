@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_editcardinfo"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.neu.yoyo.namecarddesign.Editcardinfo">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="个人名片"
+            android:textSize="16sp"
+            android:padding="18dp"
+            android:background="#ffffff"/>
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:background="#ffffff"
+            android:layout_weight="0.05">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/userinfo_Edit"
+                android:background="@android:drawable/ic_menu_edit" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:background="#ffffff"
+            android:layout_weight="0.05">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/userinfo_preview"
+                android:background="@android:drawable/ic_menu_view" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:background="#ffffff"
+            android:layout_weight="0.05">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/userinfo_ensure"
+                android:background="@null"
+                android:text="完成"
+                android:textColor="#0099ff"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/ll_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="姓        名"
+            android:textSize="15sp"
+            android:textColor="#555"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:text="Yoyo"
+            android:textColor="#555"
+            android:background="@null"
+            android:ems="10"
+            android:id="@+id/editName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/ll_telphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="电        话"
+            android:textSize="15sp"
+            android:textColor="#555"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:inputType="phone"
+            android:ems="10"
+            android:textColor="#555"
+            android:background="@null"
+            android:id="@+id/editPhone"
+            android:layout_weight="1"
+            android:text="13800001234"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/ll_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="年        龄"
+            android:textSize="15sp"
+            android:textColor="#555"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editAge"
+            android:layout_weight="1"
+            android:textColor="#555"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:text="18"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/ll_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="公        司"
+            android:textSize="15sp"
+            android:textColor="#555"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:text="Neu"
+            android:ems="10"
+            android:textColor="#555"
+            android:background="@null"
+            android:id="@+id/editCompany"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/ll_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="职        称"
+            android:textSize="15sp"
+            android:textColor="#555"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="#555"
+            android:background="@null"
+            android:text="Student"
+            android:ems="10"
+            android:id="@+id/editPosition"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/ll_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="邮         箱"
+            android:textSize="15sp"
+            android:textColor="#555"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:ems="10"
+            android:id="@+id/editEmail"
+            android:textColor="#555"
+            android:background="@null"
+            android:layout_weight="1"
+            android:text="yoyo@163.com"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/ll_mailcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="邮         编"
+            android:textSize="15sp"
+            android:textColor="#555"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:id="@+id/editMailcode"
+            android:textColor="#555"
+            android:background="@null"
+            android:layout_weight="1"
+            android:text="110000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/ll_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="样         式"
+            android:textSize="15sp"
+            android:textColor="#555"/>
+        <TextView
+            android:id="@+id/userinfo_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="默认样式"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee" />
+</LinearLayout>
+
+
+
+
+
+
